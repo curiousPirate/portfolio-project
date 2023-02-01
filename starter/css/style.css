@@ -12,9 +12,10 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  line-height: 1.5;
+  font-family: 'Nunito', sans-serif;
   width: 100%;
+  font-size: 1.2rem;
+  line-height: 1.5;
 }
 
 h1,
@@ -23,15 +24,16 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0;
+  margin-bottom: 0.625rem;
+  font-weight: 700;
+  line-height: 1.1;
 }
 
 p {
-  margin: 0;
+  margin-bottom: 1rem;
 }
 
 header {
-  background-color: var(--cyan);
   padding: 1.0rem 3.0rem;
   display: flex;
   flex-direction: row;
@@ -39,7 +41,16 @@ header {
   color: black;
   position: sticky;
   top: 0;
-  align-items: baseline;
+  background-color: white;
+  align-items: center;
+  border-bottom: black solid 1px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+main {
+  margin: 2rem auto;
+  width: 100%;
 }
 
 ul {
@@ -52,7 +63,8 @@ li {
   margin-right: 20px;
   font-size: 25px;
   font-weight: bold;
-  padding: 5px;
+  padding: 3px;
+  border-bottom: black solid 1px;
 }
 li a {
   text-decoration: none;
@@ -60,5 +72,57 @@ li a {
 }
 
 a:hover {
-  color: var(--skin)
+  color: var(--lightblue)
 }
+
+.hero-banner {
+  display: block;
+  background-image: url("../images/02-hero-bg.jpg");
+  padding-top: 109px;
+  background-image: no-repeat;
+  background-size: cover;
+}
+
+.caption {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  color:#FFFAFA;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto;
+  padding: 20px;
+}
+
+.page-section {
+  display: flex;
+  flex: 2;
+  flex: 1;
+  flex: 7;
+}
+
+#vertical-line {
+  display: flex;
+  border-left: 6px solid var(--lightblue);
+  height: 500px;
+  position: static;
+  left: 50%;
+  margin-left: -3px;
+  top: 0;
+}
+
+
+
+/* #id {
+  margin: 10px auto;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: row;
+  background-image: url("../images/Chaitanya.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
