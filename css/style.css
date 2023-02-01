@@ -1,0 +1,223 @@
+* {
+  box-sizing: border-box;
+}
+
+/* colours for the site */
+:root {
+  --lightblue: #6CB5CB;
+  --cyan: #B7D8DE;
+  --skin: #FBF5EF;
+  --orange: #FE7236;
+  --snow: snow;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito', sans-serif;
+  width: 100%;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.625rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+p {
+  margin-bottom: 1rem;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+header {
+  padding: 1.0rem 3.0rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: black;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  align-items: center;
+  border-bottom: black solid 1px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header h1:hover {
+  color: var(--lightblue);
+  cursor: none;
+}
+main {
+  margin: 2rem auto;
+  width: 100%;
+}
+
+ul {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+li {
+  list-style: none;
+  margin-right: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 3px;
+  border-bottom: black solid 1px;
+}
+li a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: var(--lightblue)
+}
+
+h2:hover {
+  color: var(--lightblue);
+  cursor: cursor-pointer;
+
+}
+
+.flex-item:hover {
+  cursor: pointer;
+}
+
+.hero-banner {
+  display: block;
+  background-image: url("../images/02-hero-bg.jpg");
+  padding-top: 109px;
+  background-image: no-repeat;
+  background-size: cover;
+}
+
+.caption {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  color:#FFFAFA;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+img {
+  padding-top: 30px;
+}
+.page-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%;
+}
+
+.page-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  padding-top: 30px;
+}
+
+.project1 {
+  background-image: url("../images/e-commerce.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.project2 {
+  background-image: url("../images/restaurant.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.project3 {
+  background-image: url("../images/weather.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom right;
+}
+
+.project4 {
+  background-image: url("../images/notes.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom right;
+}
+
+.project5 {
+  background-image: url("../images/portfolio.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom right;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.flex-item {
+  display: flex;
+  align-items: flex-end;
+  min-height: 150px;
+  max-height: 150px;
+  flex-basis: calc(50% - 1em);
+  margin: 0.5em;
+  min-height: 150px;
+  text-decoration: none;
+}
+
+.flex-item:first-child {
+  flex-basis: 100%;
+  min-height: 400px;
+  max-height: 400px;
+}
+
+.flex-item div {
+  background-color: var(--snow);
+  display: flex;
+  width: 40%;
+  text-align: center;
+}
+
+
+
+.page-section > h2 {
+  border-right: 6px solid var(--lightblue);
+} 
+
+.contact-class {
+  margin-bottom: 1rem;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .flex-item {
+    flex-basis: 100%;
+  }
+  .page-section > h2 {
+    border-bottom: 6px solid var(--lightblue);
+    border-right: none;
+  } 
+
+
+}
