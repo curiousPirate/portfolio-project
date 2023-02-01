@@ -53,9 +53,9 @@ header {
   margin: 0 auto;
 }
 
-header h1:hover {
+header h1:hover, h3:hover {
   color: var(--lightblue);
-  cursor: none;
+  cursor: pointer;
 }
 main {
   margin: 2rem auto;
@@ -202,6 +202,11 @@ img {
 .page-section > h2 {
   border-right: 6px solid var(--lightblue);
 } 
+
+.flex > a {
+  text-decoration: none;
+  color: #000000;
+}
 
 .contact-class {
   margin-bottom: 1rem;
