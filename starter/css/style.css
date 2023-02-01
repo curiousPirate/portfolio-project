@@ -65,7 +65,7 @@ main {
 ul {
   width: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 
@@ -90,6 +90,10 @@ h2:hover {
   color: var(--lightblue);
   cursor: cursor-pointer;
 
+}
+
+.flex-item:hover {
+  cursor: pointer;
 }
 
 .hero-banner {
@@ -182,8 +186,8 @@ img {
 
 .flex-item:first-child {
   flex-basis: 100%;
-  min-height: 300px;
-  max-height: 300px;
+  min-height: 400px;
+  max-height: 400px;
 }
 
 .flex-item div {
@@ -199,6 +203,11 @@ img {
   border-right: 6px solid var(--lightblue);
 } 
 
+.contact-class {
+  margin-bottom: 1rem;
+  padding-right: 10px;
+  padding-left: 10px;
+}
 
 
 @media screen and (max-width: 768px) {
