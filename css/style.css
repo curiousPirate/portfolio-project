@@ -214,18 +214,16 @@ img {
 
 
 @media screen and (max-width: 768px) {
-  .flex {
-    display: flex !important;
-    flex-direction: column!important;
+  .flex-item {
     flex-basis: 100%;
-    min-height: 150px;
+    min-height: 180px !important;
   }
 
-  .flex:first-child {
-    flex-basis: 100%;
-    min-height: 150px;
-    max-height: 150px;
+  .flex-item div {
+    display: flex;
+    width: 170px;
   }
+
   .page-section > h2 {
     border-bottom: 6px solid var(--lightblue);
     border-right: none;
